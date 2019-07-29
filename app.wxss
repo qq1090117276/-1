@@ -1,1 +1,18 @@
-@import"./styles/iconfont.wxss"
+@import"./styles/iconfont.wxss";
+page,view,navigator,text,swiper,swiper-item,rich-text,button,input,image{
+
+  box-sizing: border-box;
+}
+
+image{
+  width: 100%;
+}
+page{
+  /* 定义主题颜色 */
+  --themeColor:#f00;
+  /* 14px */
+  font-size: 28rpx;
+  color: #666;
+}
+
+/* 原生的css也是有变量的吗？？？？ */

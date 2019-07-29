@@ -1,0 +1,22 @@
+<!--搜索框开始 -->
+<view class="search" hover-class="none" hover-stop-propagation="false">
+    <navigator class="searchInput" url="/pages/search/index">
+    搜索
+</navigator>
+</view>
+<!--搜索框结束 -->
+<!-- 轮播图开始 -->
+<view>
+    <swiper class="swiper" indicator-dots autoplay circular>
+     <swiper-item wx:for="{{swiperList}}" wx:key="goods_id"> 
+    <image 
+     src="{{item.image_src}}" 
+     mode="widthFix"
+   />
+       </swiper-item> 
+</swiper>
+</view>
+  
+
+  
+<!-- 轮播图结束 -->
