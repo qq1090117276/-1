@@ -1,0 +1,33 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1564314557796'); /* IE9 */
+  src: url('iconfont.eot?t=1564314557796#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAARoAAsAAAAACTwAAAQbAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDKgqFQIRDATYCJAMUCwwABCAFhG0HahvpB8gOJUHBwABgAwBAPDyuoe8nuSuCaxWgRAdADgfs5ueB3JScrJvwLHn+c9MPVMCrkqpqmoAHn1iY+K2mfjI9TfS23fZ2a///Y74uLQokr20NNqWKt6riSKCd2UAHlr8Tv32xEMY/jF1cxtMEmg1yRViNT80FZIV2UiCecdlVgBxzKSX00Gitc64sjfEBqGtML4mHAHjv/n38B95BJqky7czDB3E1IPJX7+8JEn6HK7UxQNNfAMx1ZEwBCvEkN3QPyS9NIWmWtquZBzRqlOirNPR74u4OEQa1a1GVomb0Dy/JClHTUCu0LOJy4VevySf4Ncgn8WvIIUvmCai9KaiyLc2o7ScA0UQjDUH5xPrzGJ3Z1DTjRYd3eH59nd8bMXnz4cqt2bi+rq/BQP/Wkev3l45joPsq78ONR2Njf73e1GXl3Cl+5sdYvFCd+wP652vr3psExv6VVdclXDeED38YVY3AfUPDNC9Q0lBXOxBLLy7c5lXf32owc51PzzfQxKnv6/B6Gu1CX+Hci/G6UdVgQLdg3NwUNDY8Qhve69UUlfoNDYntw9zFkqBqeF+nB/AhW/rAiAkJrgKw8KGRQOizgy0VrLZOKrM7JESIlprNDc9QL8ghiPjETArrU54LbJyx0CUJxDR+B5R9LI+2ygCfKq9zs8jPiQKeO15OAb/rCgdlZbhOSqVNuk1lF67/3oUnp5DJphX3WsB73qm2qd6oCToHLXWY/hm9es//O+jmhVZWGOc+qHTfoJss++byjJcaC56UKIP4HLELZVVnlWLoaKAmYSv1K3o/fMepNBbwdg0jDTEQcFObGYLqodYbtY86EVSX8rZroustJYRyoLtKDjG8FU+I/2qEMW/1Sx9RDnUPm7JQhc5RgFvnp72qbfvrIWpZiyyvka9yw+A+7Ug+J14DQL7rMl8QbyKnxPyP5ZCxj6qdClboPzLtRq19gcfWkauor37iGknzabiLc4le1mnuqogmpbpwj0BlA0kuJDTrXj6JGt0+92Ppq91JaNQXQtJgALJGQ9hCnIJKi2moNVqAZpMSrm/RQ4okShMmvAIQOk1C0u4Wsk5H2EL8BJV+f6DWGSRodh66d2wxElxqjBSpkiM1UPUDiAtjItTwyqledzbCVgiqpFGdy8pHpDJuFvJy90xWExARIu3jHJmS7S2XoxAqxYRQPHgeIhBgkFiK8RBY7s6Ry8XBHh5o3he5w5gQUK2QQlSRQ9SAVHsAwgXDiKD2ajlq6vezIdgUBKpISwZKsvkQUjLczSFe3HnWwCYgUa2Bc9kuo8TmTU4OxcdQUhghSDwMIAR6CQMR5+/jQcDk3HFaFMSCeaBFaF3kPr5FeI01f+ZQ7ZwqUuQoUUWt7Xgvf1glYguQGEz8gBlb4EXleAd9AAAA') format('woff2'),
+  url('iconfont.woff?t=1564314557796') format('woff'),
+  url('iconfont.ttf?t=1564314557796') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1564314557796#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-RectangleCopy:before {
+  content: "\e6a3";
+}
+
+.icon-RectangleCopy1:before {
+  content: "\e6a7";
+}
+
+.icon-RectangleCopy2:before {
+  content: "\e6a8";
+}
+
+.icon-RectangleCopy3:before {
+  content: "\e6ae";
+}
+
