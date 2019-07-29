@@ -16,7 +16,15 @@
        </swiper-item> 
 </swiper>
 </view>
-  
-
-  
 <!-- 轮播图结束 -->
+<!-- 分类导航开始 -->
+<view class="categorys">
+    <image 
+    wx:for="{{categoryList}}"
+        wx:key="name" 
+        class="" 
+        src="{{item.image_src}}" 
+        mode="widthFix"/>
+</view>
+  
+<!-- 分类导航结束 -->
