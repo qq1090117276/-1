@@ -1,0 +1,38 @@
+.cate_container{
+    height:~'calc(100vh - 80rpx) ';
+    display: flex;
+    .left_container{
+        width: 33.3%;
+        .left_menu{
+           padding: 20rpx 0;
+           text-align: center;
+           border-bottom: 1px solid #000;
+           width:180rpx;
+        }
+        .active{
+            border-left: 3px solid #f00;
+            color: #f00;
+        }
+        .noactive{
+            background: #ccc;
+            color: #fff;
+        }
+     
+    }
+   .goodsTitle{
+        text-align: center;
+        padding: 30rpx 0;
+    }
+    .goodsList{
+        display: flex;
+        flex-wrap: wrap;
+        .goodsContainer{
+            width: 33.3%;
+            text-align: center;
+            margin-top: 40rpx;
+            image{
+                width: 120rpx;
+            }
+        }
+    }
+}

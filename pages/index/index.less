@@ -1,23 +1,35 @@
 /* pages/index/index.wxss */
-.search{
-  width: 100vw;
-  height: 80rpx;
-  background-color: #f00;
-  text-align: center;
-  .searchInput{
-    width: 97%;
-    height: 60rpx;
-    line-height: 60rpx;
-    margin-left: 10rpx;
-    text-align: center;
-    font-size: 28rpx;
-    background-color: #fff;
-    border-radius: 10rpx;
- }
-}
+
 .swiper{
   height: 340rpx;
 }
 .categorys{
   display: flex;
+  justify-content: space-between;
+  image{
+    flex: 1;
+    width: 160rpx;
+  }
+}
+.goods{
+  .goods_title{
+    padding-top: 20rpx;
+  }
+  .goodsContent{
+    overflow: hidden;
+    .goods_item{
+      width: 33.33%; 
+      float: left; 
+      &:nth-last-child(-n + 4) { 
+        height: 750rpx / 3 * 386 / 232 / 2; 
+        border-left: 10rpx solid #fff; 
+        image { 
+          height: 100%; 
+        } 
+      } 
+      &:nth-last-child(-n+2){ 
+        border-top: 10rpx solid #fff; 
+      } 
+    }
+  }
 }

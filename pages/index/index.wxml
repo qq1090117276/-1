@@ -1,10 +1,4 @@
-<!--搜索框开始 -->
-<view class="search" hover-class="none" hover-stop-propagation="false">
-    <navigator class="searchInput" url="/pages/search/index">
-    搜索
-</navigator>
-</view>
-<!--搜索框结束 -->
+<search></search>
 <!-- 轮播图开始 -->
 <view>
     <swiper class="swiper" indicator-dots autoplay circular>
@@ -19,12 +13,40 @@
 <!-- 轮播图结束 -->
 <!-- 分类导航开始 -->
 <view class="categorys">
-    <image 
-    wx:for="{{categoryList}}"
-        wx:key="name" 
-        class="" 
+<view class="" wx:for="{{categoryList}}"
+        wx:key="item" >
+     <image 
         src="{{item.image_src}}" 
         mode="widthFix"/>
 </view>
-  
+</view>
 <!-- 分类导航结束 -->
+<view class="goods">
+    <view 
+       wx:for="{{goodsList}}"
+        wx:key="name" 
+         wx:for-item="item1"
+        wx:for-index="index1">
+        <!-- 标题 -->
+        <view class="goods_title">
+            <image 
+         src="{{item1.floor_title.image_src}}" 
+         mode="widthFix" /> 
+        </view>
+        <!-- 内容 -->
+   <view class="goodsContent"> 
+    <navigator 
+    wx:for="{{item1.product_list}}" 
+    wx:for-index="index2" 
+    wx:for-item="item2" 
+    wx:key="name" 
+    class="goods_item" 
+    > 
+    <image  
+        mode="{{index2===0?'widthFix':'scaleToFill'}}"
+      src="{{item2.image_src}}"></image> 
+  </navigator> 
+  </view> 
+    </view>
+</view>
+  

@@ -1,4 +1,6 @@
-// pages/index/index.js
+import {
+  request
+} from "../../request/index.js"
 Page({
 
   /**
@@ -6,7 +8,8 @@ Page({
    */
   data: {
     swiperList: [],
-    categoryList: []
+    categoryList: [],
+    goodsList: []
   },
 
   /**
@@ -14,29 +17,39 @@ Page({
    */
   onLoad() {
     this.getSwiperList(),
-    this.getCategoryList()
+      this.getCategoryList(),
+      this.getGoosList()
   },
   // 获取轮播图数据
   getSwiperList() {
-    wx.request({
-      url: 'https://api.zbztb.cn/api/public/v1/home/swiperdata',
-      success: (result) => {
+    request({
+        url: '/home/swiperdata'
+      })
+      .then(res => {
         this.setData({
-          swiperList: result.data.message
+          swiperList: res
         })
-      },
-    });
+      })
   },
   // 分类导航菜单数据
   getCategoryList() {
-    wx.request({
-      url: 'https://api.zbztb.cn/api/public/v1/home/catitems',
-      success: (result) => {
-        console.log(result);
+    request({
+      url: '/home/catitems'
+    })
+    .then(res => {
+      this.setData({
+        categoryList: res
+      })
+    })
+  },
+  getGoosList() {
+      request({
+        url: '/home/floordata'
+      })
+      .then(res => {
         this.setData({
-          categoryList: result.data.message
+          goodsList: res
         })
-      },
-    });
+      })
   }
 })

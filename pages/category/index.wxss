@@ -1,1 +1,37 @@
-/* pages/category/index.wxss */
+.cate_container {
+  height: calc(100vh - 80rpx) ;
+  display: flex;
+}
+.cate_container .left_container {
+  width: 33.3%;
+}
+.cate_container .left_container .left_menu {
+  padding: 20rpx 0;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  width: 180rpx;
+}
+.cate_container .left_container .active {
+  border-left: 3px solid #f00;
+  color: #f00;
+}
+.cate_container .left_container .noactive {
+  background: #ccc;
+  color: #fff;
+}
+.cate_container .goodsTitle {
+  text-align: center;
+  padding: 30rpx 0;
+}
+.cate_container .goodsList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cate_container .goodsList .goodsContainer {
+  width: 33.3%;
+  text-align: center;
+  margin-top: 40rpx;
+}
+.cate_container .goodsList .goodsContainer image {
+  width: 120rpx;
+}
