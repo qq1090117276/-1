@@ -17,7 +17,7 @@
         </view>
         </view>
      </scroll-view>
-    <scroll-view scroll-y class="right_container">
+    <scroll-view scroll-y class="right_container" scroll-top="{{scrollTop}}">
         <view 
         wx:for="{{rightMenuList}}"
         wx:key="cat_id" >
@@ -28,13 +28,16 @@
         </view>
         <view class="goodsList ">
         <navigator
-          class="goodsContainer aaa"
+          class="goodsContainer"
           wx:for="{{item.children}}"
           wx:key="cat_id"
           wx:for-item="item1"
           wx:for-index="index1"
          >
-          <image  src="{{item1.cat_icon}}" mode="widthFix" />
+          <view class="goods_image">
+              <image  src="{{item1.cat_icon}}" mode="widthFix" />
+          </view>
+            
             <view>
                  {{item1.cat_name}}
             </view>

@@ -5,8 +5,10 @@ Page({
   data: {
     leftMenuList: [],
     rightMenuList: [],
-    currentIndex:0
+    currentIndex:0,
+    scrollTop:0
   },
+  resData:[],
   onLoad: function (options) {
     this.getGoodsData()
   },
@@ -14,10 +16,12 @@ Page({
     request({
       url:"/categories"
     }).then(res=>{
-      let rightMenuList=res[0].children
+      this.resData=res
+      console.log(this.resData);
       let leftMenuList = res.map(v => ({
         cat_name: v.cat_name, cat_id: v.cat_id 
       }))
+      let rightMenuList =  this.resData[0].children; 
       this.setData({
         leftMenuList,
         rightMenuList
@@ -25,8 +29,12 @@ Page({
     })
   },
   hanrdleIndex(e){
+    let {index}=e.currentTarget.dataset
+    let rightMenuList=this.resData[index].children
     this.setData({
-      currentIndex:e.currentTarget.dataset.index
+      currentIndex:index,
+      rightMenuList,
+      scrollTop:0
     })
   }
 })

@@ -33,5 +33,5 @@
   margin-top: 40rpx;
 }
 .cate_container .goodsList .goodsContainer image {
-  width: 120rpx;
+  width: 50%;
 }
